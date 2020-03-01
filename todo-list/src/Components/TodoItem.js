@@ -1,10 +1,10 @@
 import React from 'react';
 
-const TodoItem = () => {
+const TodoItem = ({todoInput}) => {
 
     return (
         <div>
-            {todoInput}
+            <p key={key}>{todoInput}</p>
             <button onClick={}>X</button>
         </div>
     )

@@ -1,15 +1,15 @@
 import React from 'react'
 import TodoItem from './TodoItem'
 
-const TodoList = ({todoList}) => {
+const TodoList = ({todoList, handleRemove}) => {
 
-    const todoList = todoList.map( (todo,i) => {
-        return <TodoItem todoInput={todoInput} key={i}/>
+    const todoListRender = todoList.map( (todo,i) => {
+        return <TodoItem todoInput={todo} key={i} handleRemove={handleRemove}/>
     })
 
     return (
         <div>
-            {todoList}
+            {todoListRender}
         </div>
     )
 }

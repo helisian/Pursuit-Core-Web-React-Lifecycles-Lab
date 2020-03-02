@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Form = ({todoInput, handleSubmit, handleChange}) => {
+const Form = ({todoInput, handleSubmit}) => {
     return(
         <form onSubmit={handleSubmit}>
-            <input type="text" name={todoInput} value={todoInput} onChange={handleChange}/>
+            <input type="text" name={todoInput.value} {...todoInput}/>
         </form>
     )
 }

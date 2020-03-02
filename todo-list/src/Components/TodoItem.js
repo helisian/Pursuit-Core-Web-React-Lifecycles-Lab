@@ -1,11 +1,11 @@
 import React from 'react';
 
-const TodoItem = ({todoInput}) => {
+const TodoItem = ({todoInput, handleRemove, key}) => {
 
     return (
         <div>
-            <p key={key}>{todoInput}</p>
-            <button onClick={}>X</button>
+            <p name={todoInput} key={key}>{todoInput}</p>
+            <button name={todoInput} onClick={(event) => {handleRemove(event)}}>X</button>
         </div>
     )
 }
